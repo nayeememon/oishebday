@@ -1,0 +1,140 @@
+body{
+    margin:0px;
+    padding: 0;
+    background: white;
+    position: relative;
+}
+
+.bday h2{
+    margin-top: 10px;
+    text-align: center;
+    background: linear-gradient(180deg,#f50290 0%,#fbff00 110%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-size: 110px;
+    font-family: SfBalloons-R0jM;
+}
+.name h2{
+    margin-top:0px important;
+    text-align: center;
+    background: linear-gradient(180deg,#2602f5 0%,#f80115 110%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-size: 100px;
+    font-family: KingthingsBloone-3926;
+    
+}
+
+@font-face {
+    font-family: SfBalloons-R0jM;
+    src:url(/font/SfBalloons-R0jM.ttf);
+}
+@font-face {
+    font-family: KingthingsBloone-3926;
+    src: url(/font/KingthingsBloone-3926.ttf);
+}
+
+.wrapper{
+    position: relative;
+    width: 450px;
+    margin: 150px auto;
+    perspective: 1000px;
+    margin-bottom: 500px;
+}
+.img-area{
+    position: absolute;
+    width: 100%;
+    height:100%;
+    transform-style:preserve-3d;
+    transform: rotateY(-360deg) translateZ(-300px);
+    animation: animate 25s steps(1000, end) infinite;
+}
+.singleimage{
+    position: absolute;
+    width: 250px;
+    height: 300px;
+    top: 10px;
+    left: 10px;
+}
+.singleimage img{
+    width: 250px;
+    height: 300px;
+    border:2px solid white;
+    background: aliceblue;
+}
+.singleimage.img-one{
+    transform: rotateY(0deg) translateZ(300px);
+}
+.singleimage.img-two{
+    transform: rotateY(60deg) translateZ(300px);
+}
+.singleimage.img-three{
+    transform: rotateY(120deg) translateZ(300px);
+}
+.singleimage.img-four{
+    transform: rotateY(180deg) translateZ(300px);
+}
+.singleimage.img-five{
+    transform: rotateY(240deg) translateZ(300px);
+}
+.singleimage.img-six{
+    transform: rotateY(300deg) translateZ(300px);
+}
+@keyframes animate {
+    from{
+        transform: rotateY(360deg);
+    }
+    to{
+        transform: rotateY(0deg);
+    }
+}
+
+.ballon{
+    position: absolute;
+    height: 250px;
+    width: 50%;
+    top: 5%;
+    left: 0%;
+}
+.ballon img {
+    width: 55%;
+}
+.ballon2 {
+    position: absolute;
+    height: 250px;
+    width: 50%;
+    top: 5%;
+    right: 0;
+    text-align: right;
+}
+.ballon2 img {
+    width: 55%;
+}
+
+.wish {
+    display: block;
+    margin: 50px auto;
+    padding: 160px;
+}
+.wish h3 {
+    font-size: 60px;
+    margin: 50px auto;
+    font-family: fantasy;
+}
+.wish p {
+    font-size: 20px;
+    line-height: 28px;
+    font-family: cursive;
+}
+.wish h2 {
+    font-family: fantasy;
+    font-weight: 100;
+}
+
+.wish img {
+    width: 50%;
+    margin: 30px auto;
+    text-align: center;
+    border-radius: 65%;
+    display: block;
+}
